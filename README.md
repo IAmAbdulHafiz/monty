@@ -58,7 +58,7 @@ Memory allocation errors will be handled with an error message, and the program 
 Testing
 Collaboratively work on a set of tests in the tests/ directory to ensure the interpreter's correctness.
 
-##Contributors
+## Contributors
 - Abdul-Hafiz Yussif
 - Email: abdulhafiz.yussif@aiesec.net
 - GitHub Username: ImAbdulHafiz
