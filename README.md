@@ -6,6 +6,31 @@ This project is a Monty language interpreter implemented in C.
 The Monty language is a scripting language that is first compiled into Monty byte codes,
 similar to Python. The interpreter relies on a unique stack with specific instructions to manipulate it.
 
+## Description
+This project is a Monty language interpreter implemented in C. The Monty language is a simple, stack-based programming language.
+
+## Features
+- Supports basic stack operations: push, pop, swap, add, subtract, multiply, divide, modulus, and more.
+- Implements both stack and queue data structures.
+- Handles Monty bytecode files and executes instructions.
+
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/monty-interpreter.git
+    cd monty-interpreter
+    ```
+2. Compile the source code:
+    ```bash
+    gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
+    ```
+
+## Usage
+Run the Monty interpreter with a Monty bytecode file:
+```bash
+./monty your_bytecode_file.m
+```
+
 ## Project Structure
 
 - `src/`: Contains the source code files.
@@ -40,23 +65,12 @@ typedef struct instruction_s
     void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 ```
-## Compilation & Execution
-Compile the code using the following command:
-```c
-$ gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
-```
-Execute the interpreter:
-```c
-$ ./monty
-```
-
 ## Error Handling
 If no file or more than one argument is provided, the program will exit with EXIT_FAILURE.
 If the file cannot be opened, an error message will be displayed, and the program will exit with EXIT_FAILURE.
 If an invalid instruction is encountered, an error message with the line number will be printed, and the program will exit with EXIT_FAILURE.
 Memory allocation errors will be handled with an error message, and the program will exit with EXIT_FAILURE.
 Testing
-Collaboratively work on a set of tests in the tests/ directory to ensure the interpreter's correctness.
 
 ## Contributors
 - Abdul-Hafiz Yussif
