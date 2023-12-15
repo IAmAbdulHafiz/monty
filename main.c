@@ -1,3 +1,5 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
 bus_t bus = {NULL, NULL, NULL, 0};
 
@@ -40,7 +42,7 @@ int main(int argc, char *argv[])
 
 		if (read_line > 0)
 		{
-			execute_opcode(content, &stack, counter, file)
+			execute_opcode(content, &stack, counter, file);
 		}
 		free(content);
 	}
