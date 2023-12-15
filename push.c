@@ -2,8 +2,8 @@
 
 /**
  * push_handler - Handles the "push" instruction.
- * @stack: Pointer to the head of the stack.
- * @line_number: Line number in the Monty bytecode file.
+ * @head: Pointer to the head of the stack.
+ * @counter: Line number in the Monty bytecode file.
  * Return: No return value.
  */
 void push_handler(stack_t **head, unsigned int counter)

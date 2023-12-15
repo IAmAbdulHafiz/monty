@@ -1,6 +1,7 @@
 #include "monty.h"
 /**
- * pchar_handler - Prints the char at the top of the stack followed by a new line.
+ * pchar_handler - Prints the char at the top of the stack followed
+ * by a new line.
  * @stack: Pointer to the head of the stack.
  * @line_number: Line number in the Monty bytecode file.
  * Return: No return value.
